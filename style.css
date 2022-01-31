@@ -278,7 +278,7 @@ a {
     top: 0;
     left: 0;
     background: #ff1ead;
-    border: 4px;
+    border-radius: 4px;
     transition: all .3s ease-in-out;
 }
 
@@ -312,7 +312,9 @@ a {
 .main h2 {
     font-size: 3em;
     background-color: #fe3b6f;
-    background-image: linear-gradient(to right, #ff087b 0%, #ed1a52 100%);
+    background: linear-gradient(to right, #fe3b6f 0%, #ed1a52 100%);
+    background: -webkit-linear-gradient(to right, #fe3b6f 0%, #ed1a52 100%);
+    background: -moz-linear-gradient(to right, #fe3b6f 0%, #ed1a52 100%);
     background-size: 100%;
     -webkit-background-clip: text;
     -moz-background-clip: text;
@@ -428,5 +430,138 @@ a {
 
     .main__button {
         padding: 20px 40px;
+    }
+}
+
+.services {
+    background: #131313;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding: 10em 0;
+}
+
+.services h2 {
+    font-size: 3.5em;
+    background-color: #ff8177;
+    background-image: linear-gradient(to right, #ff0845 0%, #ff8177 100%);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    font-variant: small-caps;
+    margin-bottom: 2.3em;
+}
+
+.services__wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+}
+
+.services__card {
+    background: #1a2a6c;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(45deg, #fdbb2d, #b21f1f, #1a2a6c);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(45deg, #fdbb2d, #b21f1f, #1a2a6c); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    margin: 12px;
+    height: 450px;
+    width: 320px;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: .25s ease-in-out;
+}
+
+.services__card:nth-child(2) {
+    background: #FC466B;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(45deg, #3F5EFB, #FC466B);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(45deg, #3F5EFB, #FC466B); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+
+.services__card:nth-child(3) {
+    background: #373B44;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(45deg, #4286f4, #373B44);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(45deg, #4286f4, #373B44); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.services__card:nth-child(4) {
+    background: #108dc7;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(45deg, #ef8e38, #108dc7);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(45deg, #ef8e38, #108dc7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.services__card:hover {
+    transform: scale(1.075);
+}
+
+.services__card h3 {
+    font-size: 2.3em;
+    text-align: center;
+    color: whitesmoke;
+    margin: 0 15px;
+}
+
+.services__card p {
+    font-size: 1.15em;
+    color: rgb(204, 203, 203);
+    text-align: center;
+    margin: 20px 0;
+}
+
+.services__btn {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.services__card button {
+    position: relative;
+    padding: 14px 30px;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+}
+
+.services__card button > span {
+    position: relative;
+    font-size: 1.05em;
+    color: whitesmoke;
+    z-index: 2;
+}
+.services__card button::after {
+    position: absolute;
+    content: '';
+    height: 0;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: #131313;
+    box-shadow: 1px 1px 5px #131313d2;
+    border-radius: 4px;
+    transition: all .3s ease-in-out;
+}
+
+.services__card button:hover::after {
+    height: 100%;
+}
+
+@media screen and (max-width: 1400px) {
+    .services__wrapper {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+}
+
+@media screen and (max-width: 730px) {
+    .services__wrapper {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
     }
 }
