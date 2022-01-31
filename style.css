@@ -458,7 +458,7 @@ a {
 
 .services__wrapper {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: repeat(4, 1fr);
     grid-template-rows: 1fr;
 }
 
@@ -562,6 +562,103 @@ a {
 @media screen and (max-width: 730px) {
     .services__wrapper {
         grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-template-rows: repeat(4, 1fr);
     }
+}
+
+
+/* Footer */
+
+.footer__container {
+    background: #131313;
+    padding: 5em 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer__links {
+    max-width: 1400px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 60px;
+    border-right: 1px solid #ff1ead;
+    border-left: 1px solid #ff1ead;
+    padding: 20px;
+}
+
+@media screen and (max-width: 1080px) {
+    .footer__links {
+        grid-template-columns: 1fr 1fr;
+        border-right: none;
+        border-left: none;
+        border-top: 1px solid #ff1ead;
+        border-bottom: 1px solid #ff1ead;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .footer__links {
+        grid-template-columns: 1fr;
+    }
+}
+
+.footer__link-items {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.footer__links h2 {
+    color: whitesmoke;
+    font-size: 2.1em;
+    margin-bottom: 6px;
+}
+
+.footer__links a {
+    color: rgb(204, 203, 203);
+    font-size: 1.4em;
+    margin: 2px;
+    transition: .3s ease;
+}
+
+.footer__links a:hover {
+    color: #fff;
+}
+
+.website__rights {
+    color: #fff;
+    font-size: 1.2em;
+    background: rgb(40, 40, 40);
+    padding: 10px;
+    margin: 40px;
+    width: 100%;
+    text-align: center;
+}
+
+.social__media p {
+    background: #03001e;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(-45deg, #fdeff9, #ec38bc, #7303c0, #03001e);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(-45deg, #fdeff9, #ec38bc, #7303c0, #03001e); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    margin-bottom: 2px;
+    text-align: center;
+    font-size: 1.2em;
+}
+
+.social__icon-link {
+    background: #03001e;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(-45deg, #fdeff9, #ec38bc, #7303c0, #03001e);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(-45deg, #fdeff9, #ec38bc, #7303c0, #03001e); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    font-size: 60px;
+    margin: 10px;
 }
