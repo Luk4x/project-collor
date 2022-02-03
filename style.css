@@ -52,6 +52,11 @@ a {
     -moz-text-fill-color: transparent;
 }
 
+.navbar__toggle {
+    background-color: transparent;
+    border: none;
+}
+
 .navbar__menu {
     display: flex;
     align-items: center;
@@ -264,7 +269,7 @@ a {
     transition: all .3s ease-in-out;
 }
 
-.main__button > a {
+.main__button > span {
     position: relative;
     z-index: 2;
     color: whitesmoke;

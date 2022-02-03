@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -17,12 +17,12 @@
 <body>
     <header class="navbar">
         <nav class="navbar__container">
-            <a href="#home" id="navbar__logo">COLLOR</a>
-            <div class="navbar__toggle" id="mobile-menu">
+            <a href="#home" id="navbar__logo">CGradients</a>
+            <button class="navbar__toggle" id="mobile-menu">
                 <span class="bar"></span>
                 <span class="bar"></span>
                 <span class="bar"></span>
-            </div>
+            </button>
             <ul class="navbar__menu">
                 <li class="navbar__item">
                     <a href="#home" class="navbar__links" id="home-page">Home</a>
@@ -41,121 +41,137 @@
     </header>
     <main>
         <section class="hero" id="home">
-            <div class="hero__container">
-                <h1 class="hero__heading">Choose your <span>colors</span></h1>
-                <p class="hero__description">Unlimited Possibilities</p>
-                <button class="main__button">
-                    <a href="#">Explore</a>
-                </button>
-            </div>
+            <article class="hero__container">
+                <h1 class="hero__heading">Explore our <span>Gradients!</span></h1>
+                <p class="hero__description">Infinite Possibilities</p>
+                <a href="#services">
+                    <button class="main__button">
+                        <span>Explore</span>
+                    </button>
+                </a>
+            </article>
         </section>
         <section class="main" id="about">
-            <div class="main__container">
-                <div class="main__img-container">
-                    <div class="main__img-card"><span class="fas fa-layer-group""></span></div>
-                </div>
-                <div class="main__content">
+            <article class="main__container">
+                <aside class="main__img-container">
+                    <div class="main__img-card">
+                        <span class="fas fa-layer-group""></span>
+                    </div>
+                </aside>
+                <article class="main__content">
                     <h2>What do we do?</h2>
-                    <h3>We help businesses scale</h3>
+                    <h3>We help businesses take off</h3>
                     <p>Schedule a call to learn more about our services</p>
-                    <button class="main__button">
-                        <a href="#">Schedule a Call</a>
-                    </button>
-                </div>
-            </div>
+                    <a href="./pages/scheduled-call.html" rel="next">
+                        <button class="main__button">
+                            <span>Schedule a Call</span>
+                        </button>
+                    </a>
+                </article>
+            </article>
         </section>
         <section class="services" id="services">
             <h2>Our Services</h2>
-            <div class="services__wrapper">
-                <div class="services__card">
+            <article class="services__wrapper">
+                <article class="services__card">
                     <h3>Custom Colorways</h3>
                     <p>AI Powered Technology</p>
-                    <div class="services__btn">
-                        <button>
-                            <span>Get Started</span>
-                        </button>
-                    </div>
-                </div>
-                <div class="services__card">
+                    <aside class="services__btn">
+                        <a href="./pages/get-started.html" rel="next">
+                            <button>
+                                <span>Get Started</span>
+                            </button>
+                        </a>
+                    </aside>
+                </article>
+                <article class="services__card">
                     <h3>Are you Ready?</h3>
-                    <p>Take the Lepa</p>
-                    <div class="services__btn">
-                        <button>
-                            <span>Get Started</span>
-                        </button>
-                    </div>
-                </div>
-                <div class="services__card">
+                    <p>In your way</p>
+                    <aside class="services__btn">
+                        <a href="./pages/get-started.html" rel="next">
+                            <button>
+                                <span>Get Started</span>
+                            </button>
+                        </a>
+                    </aside>
+                </article>
+                <article class="services__card">
                     <h3>Full Gradients</h3>
                     <p>One Hundred Combinations</p>
-                    <div class="services__btn">
-                        <button>
-                            <span>Get Started</span>
-                        </button>
-                    </div>
-                </div>
-                <div class="services__card">
+                    <aside class="services__btn">
+                        <a href="./pages/get-started.html" rel="next">
+                            <button>
+                                <span>Get Started</span>
+                            </button>
+                        </a>
+                    </aside>
+                </article>
+                <article class="services__card">
                     <h3>Infinite Choices</h3>
                     <p>One Thousand of colors</p>
-                    <div class="services__btn">
-                        <button>
-                            <span>Get Started</span>
-                        </button>
-                    </div>
-                </div>
-            </div>
+                    <aside class="services__btn">
+                        <a href="./pages/get-started.html" rel="next">
+                            <button>
+                                <span>Get Started</span>
+                            </button>
+                        </a>
+                    </aside>
+                </article>
+            </article>
         </section>
         <section class="main" id="signup">
-            <div class="main__container">
-                <div class="main__content">
+            <article class="main__container">
+                <article class="main__content">
                     <h2>Join Our Team</h2>
                     <h3>Sign Up Today</h3>
                     <p>See what make us Different</p>
-                    <button class="main__button">
-                        <a href="#">Sign Up</a>
-                    </button>
-                </div>
-                <div class="main__img-container">
+                    <a href="./pages/signup.html" rel="next">
+                        <button class="main__button">
+                            <span>Sign Up</span>
+                        </button>
+                    </a>
+                </article>
+                <aside class="main__img-container">
                     <div class="main__img-card" id="card-2">
                         <span class="fas fa-users""></span>
                     </div>
-                </div>
-            </div>
+                </aside>
+            </article>
         </section>
     </main>
     <footer class="footer__container">
         <section class="footer__links">
-            <div class="footer__link-items">
+            <article class="footer__link-items">
                 <h2>About Us</h2>
-                <a href="#">How it works</a>
-                <a href="#">Testimonials</a>
-                <a href="#">Careers</a>
-                <a href="#">Terms of Services</a>
-            </div>
-            <div class="footer__link-items">
+                <a href="" rel="next">How it works</a>
+                <a href="" rel="next">Testimonials</a>
+                <a href="" rel="next">Careers</a>
+                <a href="" rel="next">Terms of Services</a>
+            </article>
+            <article class="footer__link-items">
                 <h2>Contact Us</h2>
-                <a href="#">Contact</a>
-                <a href="#">Support</a>
-                <a href="#">Destinations</a>
-            </div>
-            <div class="footer__link-items">
+                <a href="" rel="next">Contact</a>
+                <a href="" rel="next">Support</a>
+                <a href="" rel="next">Destinations</a>
+            </article>
+            <article class="footer__link-items">
                 <h2>Videos</h2>
-                <a href="#">Submit Video</a>
-                <a href="#">Ambassadors</a>
-                <a href="#">Agency</a>
-            </div>
-            <div class="footer__link-items">
+                <a href="" rel="next">Submit Video</a>
+                <a href="" rel="next">Ambassadors</a>
+                <a href="" rel="next">Agency</a>
+            </article>
+            <article class="footer__link-items">
                 <h2>Social Media</h2>
-                <a href="#">Instagram</a>
-                <a href="#">Facebook</a>
-                <a href="#">Youtube</a>
-                <a href="#">Twitter</a>
-            </div>
+                <a href="" target="_blank" rel="external">Instagram</a>
+                <a href="" target="_blank" rel="external">Facebook</a>
+                <a href="" target="_blank" rel="external">Youtube</a>
+                <a href="" target="_blank" rel="external">Twitter</a>
+            </article>
         </section>
-        <p class="website__rights">© COLOR 2022. All Rights Reserved.</p>
+        <p class="website__rights">© COLLOR Gradients - 2022. All Rights Reserved.</p>
         <section class="social__media">
                 <p>Desenvolvido por Luk4x/</p>
-                <div class="social__icons">
+                <article class="my-social__links">
                 <a href="https://www.facebook.com/profile.php?id=100077342820651" class="social__icon-link" target="_blank" rel="external">
                     <span class="fab fa-facebook"></span>
                 </a>
@@ -168,7 +184,7 @@
                 <a href="https://github.com/luk4x" class="social__icon-link" target="_blank" rel="external">
                     <span class="fab fa-github"></span>
                 </a>
-           </div>
+            </article>
         </section>
     </footer>
 </body>
