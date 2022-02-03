@@ -78,7 +78,7 @@ a {
 }
 
 .navbar__links:hover {
-    color: #9518fc;
+    color: #6a3093;
 }
 
 .navbar__btn {
@@ -100,10 +100,14 @@ a {
     border-radius: 4px;
     color: whitesmoke;
     background-color: #833ab4;
-    background: linear-gradient(to right, #fcb045, #fd1d1d, #833ab4);
-    background: -webkit-linear-gradient(to right, #fcb045, #fd1d1d, #833ab4);
-    background: -moz-linear-gradient(to right, #fcb045, #fd1d1d, #833ab4);
+    background: #4776E6;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #8E54E9, #4776E6);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #8E54E9, #4776E6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */    
     transition: all .3s ease;
+}
+
+.button:hover {
+    box-shadow: 0px 0px 12px #4777e6d2;
 }
 
 @media screen and (max-width: 960px) {
@@ -186,7 +190,7 @@ a {
 }
 
 .highlight {
-    border-bottom: 4px solid rgb(132, 0, 255);
+    border-bottom: 4px solid #a044ff;
     border-radius: 3px;
 }
 
@@ -217,10 +221,10 @@ a {
 }
 
 .hero__heading > span {
-    background: #ee0979;
-    background: linear-gradient(to right, #ff6a00, #ee0979);
-    background: -webkit-linear-gradient(to right, #ff6a00, #ee0979);
-    background: -moz-linear-gradient(to right, #ff6a00, #ee0979);
+    background-color: #833ab4;
+    background: linear-gradient(to right, #fcb045, #fd1d1d, #833ab4);
+    background: -webkit-linear-gradient(to right, #fcb045, #fd1d1d, #833ab4);
+    background: -moz-linear-gradient(to right, #fcb045, #fd1d1d, #833ab4);
     background-size: 100%;
     -webkit-background-clip: text;
     -moz-background-clip: text;
@@ -231,10 +235,9 @@ a {
 .hero__description {
     font-size: 3.6em;
     padding-bottom: 20px;
-    background: #da22ff;
-    background: linear-gradient(to left, #8f0eff, #da22ff);
-    background: -moz-linear-gradient(to left, #8f0eff, #da22ff);
-    background: -webkit-linear-gradient(to left, #8f0eff,#da22ff);
+    background: #6a3093;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, #a044ff, #6a3093);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #a044ff, #6a3093); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */    
     -webkit-background-clip: text;
     -moz-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -257,15 +260,15 @@ a {
     justify-content: center;
     align-items: center;
     padding: 20px 60px;
-    margin: 0 auto;
+    margin: auto;
     font-size: 1.8em;
     cursor: pointer;
     border: none;
     border-radius: 4px;
     background-color: #833ab4;
-    background: linear-gradient(to right, #fcb045, #fd1d1d, #833ab4);
-    background: -webkit-linear-gradient(to right, #fcb045, #fd1d1d, #833ab4);
-    background: -moz-linear-gradient(to right, #fcb045, #fd1d1d, #833ab4);
+    background: #4776E6;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #8E54E9, #4776E6);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #8E54E9, #4776E6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */  
     transition: all .3s ease-in-out;
 }
 
@@ -275,6 +278,10 @@ a {
     color: whitesmoke;
 }
 
+.main__button:hover {
+    box-shadow: 0px 0px 12px #4777e6d2;
+}
+
 .main__button::after {
     position: absolute;
     content: '';
@@ -282,7 +289,7 @@ a {
     width: 0;
     top: 0;
     left: 0;
-    background: #ff1ead;
+    background: #8E54E9;
     border-radius: 4px;
     transition: all .3s ease-in-out;
 }
@@ -312,14 +319,14 @@ a {
 .main__content {
     color: whitesmoke;
     width: 100%;
+    text-align: center;
 }
 
 .main h2 {
     font-size: 3em;
-    background-color: #fe3b6f;
-    background: linear-gradient(to right, #fe3b6f 0%, #ed1a52 100%);
-    background: -webkit-linear-gradient(to right, #fe3b6f 0%, #ed1a52 100%);
-    background: -moz-linear-gradient(to right, #fe3b6f 0%, #ed1a52 100%);
+    background: #833ab4;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, #fcb045, #fd1d1d, #833ab4);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #fcb045, #fd1d1d, #833ab4); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     background-size: 100%;
     -webkit-background-clip: text;
     -moz-background-clip: text;
@@ -331,10 +338,9 @@ a {
 
 .main h3 {
     font-size: 3.8em;
-    background: #ff8177;
-    background: linear-gradient(to right, #9114ff, #da22ff);
-    background: -moz-linear-gradient(to right, #9114ff, #da22ff);
-    background: -webkit-linear-gradient(to right, #9114ff,#da22ff);
+    background: #6a3093;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #a044ff, #6a3093);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #a044ff, #6a3093); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     -webkit-background-clip: text;
     -moz-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -360,7 +366,9 @@ a {
     width: 500px;
     height: 500px;
     border-radius: 5px;
-    background: linear-gradient(to right, #00dbde 0%, #fc00ff 100%);
+    background: #ff00cc;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(-45deg, #333399, #ff00cc);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(-45deg, #333399, #ff00cc); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 .fa-layer-group, .fa-users {
@@ -368,10 +376,10 @@ a {
 }
 
 #card-2 {
-    background: #ff512f;
-    background: linear-gradient(to right, #dd2476, #ff512f);
-    background: -moz-linear-gradient(to right, #dd2476, #ff512f);
-    background: -webkit-linear-gradient(to right, #dd2476, #ff512f);
+    margin-top: 50px;
+    background: #0575E6;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(45deg, #021B79, #0575E6);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(45deg, #021B79, #0575E6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 @media screen and (max-width: 1200px) {
@@ -450,15 +458,16 @@ a {
 
 .services h2 {
     font-size: 3.5em;
-    background-color: #ff8177;
-    background-image: linear-gradient(to right, #ff0845 0%, #ff8177 100%);
+    background: #833ab4;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, #fcb045, #fd1d1d, #833ab4);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #fcb045, #fd1d1d, #833ab4); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     background-size: 100%;
     -webkit-background-clip: text;
     -moz-background-clip: text;
     -webkit-text-fill-color: transparent;
     -moz-text-fill-color: transparent;
     font-variant: small-caps;
-    margin-bottom: 2.3em;
+    margin-bottom: 2em;
 }
 
 .services__wrapper {
@@ -503,6 +512,19 @@ a {
 
 .services__card:hover {
     transform: scale(1.075);
+    box-shadow: 0px 0px 10px #b21f1fd2;
+}
+
+.services__card:nth-child(2):hover {
+    box-shadow: 0px 0px 10px #3F5EFBd2;
+}
+
+.services__card:nth-child(3):hover {
+    box-shadow: 0px 0px 10px #4286f4d2;
+}
+
+.services__card:nth-child(4):hover {
+    box-shadow: 0px 0px 10px #108dc7d2;
 }
 
 .services__card h3 {
@@ -548,7 +570,7 @@ a {
     top: 0;
     left: 0;
     background: #131313;
-    box-shadow: 1px 1px 5px #131313d2;
+    box-shadow: 0px 0px 5px #131313d2;
     border-radius: 4px;
     transition: all .3s ease-in-out;
 }
@@ -570,7 +592,6 @@ a {
         grid-template-rows: repeat(4, 1fr);
     }
 }
-
 
 /* Footer */
 
