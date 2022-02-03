@@ -44,6 +44,7 @@ a {
     align-items: center;
     cursor: pointer;
     font-size: 1.6em;
+    text-shadow: 0 0 8px #ff0844d2;
 
     /* aplica o gradient ao texto */
     -webkit-background-clip: text;
