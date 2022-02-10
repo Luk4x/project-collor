@@ -1,14 +1,15 @@
 # Collor Gradients
 
 ## about
-Website made using uigradients.com gradients, to improve my knowledge in HTML, CSS and JS.
+Collor Gradients - was a project created with HTML5, CSS3 and JavaScript to put most of the things I've learned so far into practice. Made from uigradients.com gradients, it's a website for a supposed gradient company.
+I tried hard to make the HTML as semantic and cohesive as possible, and to make it well styling and beautiful, putting my knowledge of grid, flex, animations to the test, and I used JavaScript to put the finishing touches on it.
 
 ## Result
 <img src="./result/result1.png" alt="result">
 <img src="./result/result2.png" alt="result">
 Access the project <a href="https://luk4x.github.io/project-collor/">HERE</a>
 
-## 🤝 Contributors Linkedin
+## Contributors Contact
 <table>
   <tr>
     <td align="center">
