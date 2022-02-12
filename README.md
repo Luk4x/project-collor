@@ -6,7 +6,7 @@ I tried hard to make the HTML as semantic and cohesive as possible, and to make 
 
 ## Result
 <p align="center">
-  <img src="./collorG-min.gif" alt="result">
+  <video src="https://user-images.githubusercontent.com/86276393/153721992-6a11ac37-d46d-4906-8feb-3e2bc549d780.mp4">
 </p>
 Access the project <a href="https://luk4x.github.io/project-collor/">HERE</a>
 
