@@ -43,7 +43,7 @@
 
 > Assistir o vídeo acima e/ou acessar o projeto online ajudará na compreensão da explicação!
 
-A Collor Gradients é um projeto inspirado na [uiGradients](https://uigradients.com/), sendo uma empresa fictícia de grandients.<br>
+A Collor Gradients é um projeto inspirado na [uiGradients](https://uigradients.com/), sendo uma empresa fictícia de gradients.<br>
 Também é possível interpretar esse projeto como uma página de venda/marketing para a uiGradients, tendo em vista que, pelos menos até o momento, ela não possui uma.<br>
 Durante esse projeto, consegui aperfeiçoar bem principalmente meus conhecimentos de HTML e CSS.
 
