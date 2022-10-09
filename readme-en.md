@@ -52,6 +52,7 @@ During this project, I managed to improve well mainly my knowledge of HTML and C
 - Fully responsive;
 - Well-crafted navigation bar;
 - Animations with CSS Transition;
+- Semantic HTML;
 
 ## 📖 Cloning the Project
 
