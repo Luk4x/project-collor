@@ -52,6 +52,7 @@ Durante esse projeto, consegui aperfeiçoar bem principalmente meus conhecimento
 - Totalmente responsivo;
 - Barra de navegação bem trabalhada;
 - Animações com CSS Transition;
+- HTML Semântico;
 
 ## 📖 Clonando o Projeto
 
